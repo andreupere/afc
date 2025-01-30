@@ -1,0 +1,1 @@
+apaspai@longitude:~/developing/java/afc-jars$ java -classpath .:jars/afc-server-side-impl-0.0.1-SNAPSHOT.jar:jars/* cat.uib.secom.crypto.afc.integration.client.ClientToVM 192.168.56.101 60000

@@ -1,0 +1,6 @@
+<registration-request-groupttp>
+   <user-identity>1</user-identity>
+   <certificate>certificate_1</certificate>
+   <signature>3b87b006c81aaf7b2ff24112cdecaea110b84bff8e551a53a2c323247b11a22a57d35a562a9fa6dd266383b8a82538357dce1952791b5e076eae7c5a688a3b88172b075a2aee22097a8a421d349d6e7fcd47f526f37f55dda84e29452414880470d69827d887f3892ab24a6ab939926690630ec9ea669bacdb9e0a4c8e755cdf</signature>
+   <yu>3de3b05eec3163e6174390e1263c16259c546a64af0b353af4bc7469f98ca5f7a5cd5862794e6f0561ecab72</yu>
+</registration-request-groupttp>

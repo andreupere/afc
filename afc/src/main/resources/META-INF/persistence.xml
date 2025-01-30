@@ -1,0 +1,65 @@
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence" version="1.0">
+
+	<persistence-unit name="groupManager-PU" transaction-type="RESOURCE_LOCAL">
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.GroupManagerConfigImpl</class>
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.GroupManagerPrivateKey</class>
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.GroupPublicKey</class>
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.UserPrivateKey</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.show_sql" value="true"/>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="pere"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/afc2_group_manager"/>
+		</properties>
+	</persistence-unit>
+	
+	<persistence-unit name="paymentTTP-PU" transaction-type="RESOURCE_LOCAL">
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.payttp.PaymentTTPAccountImpl</class>
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.payttp.PaymentTTPTransactionImpl</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="pere"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/afc2_payment_ttp"/>
+		</properties>
+	</persistence-unit>
+	
+	<persistence-unit name="providers-PU" transaction-type="RESOURCE_LOCAL">
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.provider.StationImpl</class>
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.provider.StationTransactionImpl</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="pere"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/afc2_providers"/>
+		</properties>
+	</persistence-unit>
+	
+	<persistence-unit name="userAFC-PU" transaction-type="RESOURCE_LOCAL">
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl</class>
+		<class>cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+			<property name="hibernate.hbm2ddl.auto" value="update"/>
+			<property name="hibernate.show_sql" value="false"/>
+			<property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+			<property name="hibernate.connection.username" value="root"/>
+			<property name="hibernate.connection.password" value="pere"/>
+			<property name="hibernate.connection.url" value="jdbc:mysql://localhost/afc2_user"/>
+		</properties>
+	</persistence-unit>
+</persistence>

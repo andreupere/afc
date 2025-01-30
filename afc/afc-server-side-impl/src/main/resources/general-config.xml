@@ -1,0 +1,19 @@
+<general-config>
+	<certificates-path>/home/apaspai/developing/java/afc-jars/keys_certs/</certificates-path>
+	<private-key-password>pere</private-key-password>
+	<output-xml-path>/home/apaspai/developing/java/afc-jars/data/</output-xml-path>
+	<initial-balance>100</initial-balance>
+	<validity-time>3600000</validity-time>
+	<max-serial-number>999999999</max-serial-number>
+	<elliptic-curve-filename>d840347-175-161.param</elliptic-curve-filename>
+	<num-deployed-keys>100</num-deployed-keys>
+	<group-ttp-port>20000</group-ttp-port>
+	<pay-ttp-port>30000</pay-ttp-port>
+	<source-provider-base-port>40000</source-provider-base-port>
+	<destination-provider-base-port>50000</destination-provider-base-port>
+	<source-provider-1-port>40001</source-provider-1-port>
+	<destination-provider-1-port>50001</destination-provider-1-port>
+	<destination-provider-2-port>50002</destination-provider-2-port>
+	<destination-provider-3-port>50003</destination-provider-3-port>
+	<destination-provider-4-port>50004</destination-provider-4-port>
+</general-config>

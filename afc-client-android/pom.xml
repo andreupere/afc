@@ -1,0 +1,23 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	
+	<modelVersion>4.0.0</modelVersion>
+  <groupId>cat.uib.secom</groupId>
+  <artifactId>afc-client-android</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>AFC client android</name>
+  <description>AFC client for android</description>
+  <dependencies>
+  	<dependency>
+  		<groupId>cat.uib.secom</groupId>
+  		<artifactId>bbs-short-group-signature</artifactId>
+  		<version>0.0.1</version>
+  		<type>jar</type>
+  		<scope>compile</scope>
+  	</dependency>
+  	<dependency>
+  		<groupId>cat.uib.secom</groupId>
+  		<artifactId>afc-common</artifactId>
+  		<version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+</project>

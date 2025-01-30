@@ -1,0 +1,558 @@
+DEBUG main 2011-03-31 12:32:51,360 AbstractEntityPersister -  Insert 0: insert into USER_AFC_JOURNEY (TIN_SECRET_K, TIN_SECRET_R1, TIN_SIGNATURE, TIN_SERIAL_NUMBER, TIN_OMEGA_DELTAU, TIN_OMEGA_HK, TIN_OMEGA_S1, TIN_OMEGA_SIGN_C, TIN_OMEGA_SIGN_SALPHA, TIN_OMEGA_SIGN_SBETA, TIN_OMEGA_SIGN_SDELTA1, TIN_OMEGA_SIGN_DELTA2, TIN_OMEGA_SIGN_SX, TIN_OMEGA_SIGN_T1, TIN_OMEGA_SIGN_T2, TIN_OMEGA_SIGN_T3, TIN_SOURCE_STATION, TIN_TAU_1, TIN_VALIDITY_TIME, TOUT_SIGNATURE, TOUT_DESTINATION_STATION, TOUT_FARE, TOUT_SERIAL_NUMBER, TOUT_MESSAGE, USER_YU, ID) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG main 2011-03-31 12:32:51,361 AbstractEntityPersister -  Update 0: update USER_AFC_JOURNEY set TIN_SECRET_K=?, TIN_SECRET_R1=?, TIN_SIGNATURE=?, TIN_SERIAL_NUMBER=?, TIN_OMEGA_DELTAU=?, TIN_OMEGA_HK=?, TIN_OMEGA_S1=?, TIN_OMEGA_SIGN_C=?, TIN_OMEGA_SIGN_SALPHA=?, TIN_OMEGA_SIGN_SBETA=?, TIN_OMEGA_SIGN_SDELTA1=?, TIN_OMEGA_SIGN_DELTA2=?, TIN_OMEGA_SIGN_SX=?, TIN_OMEGA_SIGN_T1=?, TIN_OMEGA_SIGN_T2=?, TIN_OMEGA_SIGN_T3=?, TIN_SOURCE_STATION=?, TIN_TAU_1=?, TIN_VALIDITY_TIME=?, TOUT_SIGNATURE=?, TOUT_DESTINATION_STATION=?, TOUT_FARE=?, TOUT_SERIAL_NUMBER=?, TOUT_MESSAGE=?, USER_YU=? where ID=?
+DEBUG main 2011-03-31 12:32:51,361 AbstractEntityPersister -  Delete 0: delete from USER_AFC_JOURNEY where ID=?
+DEBUG main 2011-03-31 12:32:51,361 AbstractEntityPersister -  Identity insert: insert into USER_AFC_JOURNEY (TIN_SECRET_K, TIN_SECRET_R1, TIN_SIGNATURE, TIN_SERIAL_NUMBER, TIN_OMEGA_DELTAU, TIN_OMEGA_HK, TIN_OMEGA_S1, TIN_OMEGA_SIGN_C, TIN_OMEGA_SIGN_SALPHA, TIN_OMEGA_SIGN_SBETA, TIN_OMEGA_SIGN_SDELTA1, TIN_OMEGA_SIGN_DELTA2, TIN_OMEGA_SIGN_SX, TIN_OMEGA_SIGN_T1, TIN_OMEGA_SIGN_T2, TIN_OMEGA_SIGN_T3, TIN_SOURCE_STATION, TIN_TAU_1, TIN_VALIDITY_TIME, TOUT_SIGNATURE, TOUT_DESTINATION_STATION, TOUT_FARE, TOUT_SERIAL_NUMBER, TOUT_MESSAGE, USER_YU) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG main 2011-03-31 12:32:51,363 AbstractEntityPersister - Static SQL for entity: cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl
+DEBUG main 2011-03-31 12:32:51,363 AbstractEntityPersister -  Version select: select ID from USER_AFC where ID =?
+DEBUG main 2011-03-31 12:32:51,363 AbstractEntityPersister -  Snapshot select: select userafcimp_.ID, userafcimp_.USER_CERTIFICATE as USER2_16_, userafcimp_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_, userafcimp_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_, userafcimp_.GROUP_PUBLIC_KEY_H as GROUP5_16_, userafcimp_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_, userafcimp_.GROUP_PUBLIC_KEY_U as GROUP7_16_, userafcimp_.GROUP_PUBLIC_KEY_V as GROUP8_16_, userafcimp_.USER_REAL_IDENTITY as USER9_16_, userafcimp_.USER_PK_A as USER10_16_, userafcimp_.USER_PK_X as USER11_16_, userafcimp_.USER_SECRET_XU as USER12_16_, userafcimp_.USER_YU as USER13_16_ from USER_AFC userafcimp_ where userafcimp_.ID=?
+DEBUG main 2011-03-31 12:32:51,363 AbstractEntityPersister -  Insert 0: insert into USER_AFC (USER_CERTIFICATE, GROUP_PUBLIC_KEY_G1, GROUP_PUBLIC_KEY_G2, GROUP_PUBLIC_KEY_H, GROUP_PUBLIC_KEY_OMEGA, GROUP_PUBLIC_KEY_U, GROUP_PUBLIC_KEY_V, USER_REAL_IDENTITY, USER_PK_A, USER_PK_X, USER_SECRET_XU, USER_YU, ID) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG main 2011-03-31 12:32:51,363 AbstractEntityPersister -  Update 0: update USER_AFC set USER_CERTIFICATE=?, GROUP_PUBLIC_KEY_G1=?, GROUP_PUBLIC_KEY_G2=?, GROUP_PUBLIC_KEY_H=?, GROUP_PUBLIC_KEY_OMEGA=?, GROUP_PUBLIC_KEY_U=?, GROUP_PUBLIC_KEY_V=?, USER_REAL_IDENTITY=?, USER_PK_A=?, USER_PK_X=?, USER_SECRET_XU=?, USER_YU=? where ID=?
+DEBUG main 2011-03-31 12:32:51,363 AbstractEntityPersister -  Delete 0: delete from USER_AFC where ID=?
+DEBUG main 2011-03-31 12:32:51,363 AbstractEntityPersister -  Identity insert: insert into USER_AFC (USER_CERTIFICATE, GROUP_PUBLIC_KEY_G1, GROUP_PUBLIC_KEY_G2, GROUP_PUBLIC_KEY_H, GROUP_PUBLIC_KEY_OMEGA, GROUP_PUBLIC_KEY_U, GROUP_PUBLIC_KEY_V, USER_REAL_IDENTITY, USER_PK_A, USER_PK_X, USER_SECRET_XU, USER_YU) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+DEBUG main 2011-03-31 12:32:51,364 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [NONE]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=?
+DEBUG main 2011-03-31 12:32:51,364 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [READ]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=?
+DEBUG main 2011-03-31 12:32:51,365 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [UPGRADE]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,365 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [UPGRADE_NOWAIT]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,365 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [FORCE]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,366 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [PESSIMISTIC_READ]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=? lock in share mode
+DEBUG main 2011-03-31 12:32:51,366 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [PESSIMISTIC_WRITE]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,367 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [PESSIMISTIC_FORCE_INCREMENT]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,367 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [OPTIMISTIC]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=?
+DEBUG main 2011-03-31 12:32:51,367 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl [OPTIMISTIC_FORCE_INCREMENT]: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=?
+DEBUG main 2011-03-31 12:32:51,368 CascadeEntityLoader - Static select for action ACTION_MERGE on entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=?
+DEBUG main 2011-03-31 12:32:51,368 CascadeEntityLoader - Static select for action ACTION_REFRESH on entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl: select userafcjou0_.ID as ID17_0_, userafcjou0_.TIN_SECRET_K as TIN2_17_0_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_0_, userafcjou0_.TIN_SIGNATURE as TIN4_17_0_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_0_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_0_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_0_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_0_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_0_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_0_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_0_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_0_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_0_, userafcjou0_.TIN_TAU_1 as TIN19_17_0_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_0_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_0_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_0_, userafcjou0_.TOUT_FARE as TOUT23_17_0_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_0_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_0_, userafcjou0_.USER_YU as USER26_17_0_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.ID=?
+DEBUG main 2011-03-31 12:32:51,368 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [NONE]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=?
+DEBUG main 2011-03-31 12:32:51,369 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [READ]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=?
+DEBUG main 2011-03-31 12:32:51,369 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [UPGRADE]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,369 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [UPGRADE_NOWAIT]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,370 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [FORCE]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,370 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [PESSIMISTIC_READ]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=? lock in share mode
+DEBUG main 2011-03-31 12:32:51,370 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [PESSIMISTIC_WRITE]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,370 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [PESSIMISTIC_FORCE_INCREMENT]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=? for update
+DEBUG main 2011-03-31 12:32:51,371 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [OPTIMISTIC]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=?
+DEBUG main 2011-03-31 12:32:51,371 EntityLoader - Static select for entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl [OPTIMISTIC_FORCE_INCREMENT]: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=?
+DEBUG main 2011-03-31 12:32:51,371 CascadeEntityLoader - Static select for action ACTION_MERGE on entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=?
+DEBUG main 2011-03-31 12:32:51,372 CascadeEntityLoader - Static select for action ACTION_REFRESH on entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl: select userafcimp0_.ID as ID16_0_, userafcimp0_.USER_CERTIFICATE as USER2_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_0_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_0_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_0_, userafcimp0_.USER_PK_A as USER10_16_0_, userafcimp0_.USER_PK_X as USER11_16_0_, userafcimp0_.USER_SECRET_XU as USER12_16_0_, userafcimp0_.USER_YU as USER13_16_0_ from USER_AFC userafcimp0_ where userafcimp0_.ID=?
+DEBUG main 2011-03-31 12:32:51,372 SessionFactoryObjectFactory - registered: 4b73e0e3-2557-4b5d-a223-3edd5fd7558a (unnamed)
+INFO main 2011-03-31 12:32:51,372 SessionFactoryObjectFactory - Not binding factory to JNDI, no JNDI name configured
+DEBUG main 2011-03-31 12:32:51,372 SessionFactoryImpl - instantiated session factory
+INFO main 2011-03-31 12:32:51,372 SchemaUpdate - Running hbm2ddl schema update
+INFO main 2011-03-31 12:32:51,372 SchemaUpdate - fetching database metadata
+INFO main 2011-03-31 12:32:51,372 SchemaUpdate - updating schema
+DEBUG main 2011-03-31 12:32:51,372 Configuration$MetadataSourceQueue - Processing hbm.xml files
+DEBUG main 2011-03-31 12:32:51,373 Configuration$MetadataSourceQueue - Process annotated classes
+DEBUG main 2011-03-31 12:32:51,373 Configuration - processing fk mappings (*ToOne and JoinedSubclass)
+DEBUG main 2011-03-31 12:32:51,373 Configuration - processing extends queue
+DEBUG main 2011-03-31 12:32:51,373 Configuration - processing extends queue
+DEBUG main 2011-03-31 12:32:51,373 Configuration - processing collection mappings
+DEBUG main 2011-03-31 12:32:51,373 Configuration - processing native query and ResultSetMapping mappings
+DEBUG main 2011-03-31 12:32:51,373 Configuration - processing association property references
+DEBUG main 2011-03-31 12:32:51,374 Configuration - processing foreign key constraints
+INFO main 2011-03-31 12:32:51,379 TableMetadata - table found: afc2_user.USER_AFC
+INFO main 2011-03-31 12:32:51,379 TableMetadata - columns: [group_public_key_g2, group_public_key_g1, user_pk_x, user_real_identity, id, user_pk_a, group_public_key_v, user_secret_xu, group_public_key_u, user_yu, group_public_key_h, user_certificate, group_public_key_omega]
+INFO main 2011-03-31 12:32:51,379 TableMetadata - foreign keys: []
+INFO main 2011-03-31 12:32:51,380 TableMetadata - indexes: [primary]
+INFO main 2011-03-31 12:32:51,386 TableMetadata - table found: afc2_user.USER_AFC_JOURNEY
+INFO main 2011-03-31 12:32:51,386 TableMetadata - columns: [tin_omega_deltau, tin_omega_sign_sx, tin_omega_sign_salpha, tout_fare, tin_signature, tin_omega_s1, tout_serial_number, id, tin_omega_sign_sbeta, tin_validity_time, tin_omega_hk, user_yu, tin_secret_k, tout_signature, tin_omega_sign_t1, tin_omega_sign_t3, tin_secret_r1, tin_omega_sign_t2, tout_destination_station, tin_source_station, tin_omega_sign_c, tin_omega_sign_sdelta1, tout_message, tin_omega_sign_delta2, tin_serial_number, tin_tau_1]
+INFO main 2011-03-31 12:32:51,387 TableMetadata - foreign keys: []
+INFO main 2011-03-31 12:32:51,387 TableMetadata - indexes: [primary]
+DEBUG main 2011-03-31 12:32:51,387 DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+DEBUG main 2011-03-31 12:32:51,387 DefaultIdentifierGeneratorFactory - Setting dialect [org.hibernate.dialect.MySQLDialect]
+INFO main 2011-03-31 12:32:51,387 SchemaUpdate - schema update complete
+DEBUG main 2011-03-31 12:32:51,387 SessionFactoryImpl - Checking 2 named HQL queries
+DEBUG main 2011-03-31 12:32:51,388 SessionFactoryImpl - Checking named query: searchIdRobot
+DEBUG main 2011-03-31 12:32:51,388 QueryTranslatorImpl - parse() - HQL: SELECT u FROM cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl u WHERE u.realIdentity = :idRobot
+DEBUG main 2011-03-31 12:32:51,391 QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  |  +-[IDENT] Node: 'cat'
+    |  |     |  |  |  |  |  |  |  |  |  \-[IDENT] Node: 'uib'
+    |  |     |  |  |  |  |  |  |  |  \-[IDENT] Node: 'secom'
+    |  |     |  |  |  |  |  |  |  \-[IDENT] Node: 'crypto'
+    |  |     |  |  |  |  |  |  \-[IDENT] Node: 'afc'
+    |  |     |  |  |  |  |  \-[IDENT] Node: 'store'
+    |  |     |  |  |  |  \-[IDENT] Node: 'pojo'
+    |  |     |  |  |  \-[IDENT] Node: 'impl'
+    |  |     |  |  \-[IDENT] Node: 'user'
+    |  |     |  \-[IDENT] Node: 'UserAFCImpl'
+    |  |     \-[ALIAS] Node: 'u'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'u'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[IDENT] Node: 'u'
+          |  \-[IDENT] Node: 'realIdentity'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'idRobot'
+
+DEBUG main 2011-03-31 12:32:51,391 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-03-31 12:32:51,391 HqlSqlBaseWalker - select << begin [level=1, statement=select]
+DEBUG main 2011-03-31 12:32:51,392 FromElement - FromClause{level=1} :  cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl (u) -> userafcimp0_
+DEBUG main 2011-03-31 12:32:51,392 FromReferenceNode - Resolved :  u -> userafcimp0_.ID
+DEBUG main 2011-03-31 12:32:51,392 FromReferenceNode - Resolved :  u -> userafcimp0_.ID
+DEBUG main 2011-03-31 12:32:51,393 DotNode - getDataType() : realIdentity -> org.hibernate.type.StringType@29c56c60
+DEBUG main 2011-03-31 12:32:51,393 FromReferenceNode - Resolved :  u.realIdentity -> userafcimp0_.USER_REAL_IDENTITY
+DEBUG main 2011-03-31 12:32:51,393 HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+DEBUG main 2011-03-31 12:32:51,393 HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} userafcimp0_.ID ) ( FromClause{level=1} USER_AFC userafcimp0_ ) ( WHERE ( = ( userafcimp0_.USER_REAL_IDENTITY userafcimp0_.ID realIdentity ) ? ) ) )
+DEBUG main 2011-03-31 12:32:51,393 JoinProcessor - Using FROM fragment [USER_AFC userafcimp0_]
+DEBUG main 2011-03-31 12:32:51,394 HqlSqlBaseWalker - select >> end [level=1, statement=select]
+DEBUG main 2011-03-31 12:32:51,394 QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (USER_AFC)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'userafcimp0_.ID as ID16_' {alias=u, className=cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl, tableAlias=userafcimp0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'userafcimp0_.USER_CERTIFICATE as USER2_16_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_, userafcimp0_.USER_PK_A as USER10_16_, userafcimp0_.USER_PK_X as USER11_16_, userafcimp0_.USER_SECRET_XU as USER12_16_, userafcimp0_.USER_YU as USER13_16_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[u], fromElementByTableAlias=[userafcimp0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'USER_AFC userafcimp0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=u,role=null,tableName=USER_AFC,tableAlias=userafcimp0_,origin=null,columns={,className=cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'userafcimp0_.USER_REAL_IDENTITY' {propertyName=realIdentity,dereferenceType=ALL,propertyPath=realIdentity,path=u.realIdentity,tableAlias=userafcimp0_,className=cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl,classAlias=u}
+          |  +-[ALIAS_REF] IdentNode: 'userafcimp0_.ID' {alias=u, className=cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl, tableAlias=userafcimp0_}
+          |  \-[IDENT] IdentNode: 'realIdentity' {originalText=realIdentity}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=idRobot, expectedType=org.hibernate.type.StringType@29c56c60}
+
+DEBUG main 2011-03-31 12:32:51,394 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-03-31 12:32:51,395 QueryTranslatorImpl - HQL: SELECT u FROM cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl u WHERE u.realIdentity = :idRobot
+DEBUG main 2011-03-31 12:32:51,395 QueryTranslatorImpl - SQL: select userafcimp0_.ID as ID16_, userafcimp0_.USER_CERTIFICATE as USER2_16_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_, userafcimp0_.USER_PK_A as USER10_16_, userafcimp0_.USER_PK_X as USER11_16_, userafcimp0_.USER_SECRET_XU as USER12_16_, userafcimp0_.USER_YU as USER13_16_ from USER_AFC userafcimp0_ where userafcimp0_.USER_REAL_IDENTITY=?
+DEBUG main 2011-03-31 12:32:51,395 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-03-31 12:32:51,395 SessionFactoryImpl - Checking named query: searchTicketSerialNumber
+DEBUG main 2011-03-31 12:32:51,396 QueryTranslatorImpl - parse() - HQL: SELECT ua FROM cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl ua WHERE ticketINSigned.ticketIN.serialNumber = :serialNumber
+DEBUG main 2011-03-31 12:32:51,399 QueryTranslatorImpl - --- HQL AST ---
+ \-[QUERY] Node: 'query'
+    +-[SELECT_FROM] Node: 'SELECT_FROM'
+    |  +-[FROM] Node: 'FROM'
+    |  |  \-[RANGE] Node: 'RANGE'
+    |  |     +-[DOT] Node: '.'
+    |  |     |  +-[DOT] Node: '.'
+    |  |     |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  +-[DOT] Node: '.'
+    |  |     |  |  |  |  |  |  |  |  |  +-[IDENT] Node: 'cat'
+    |  |     |  |  |  |  |  |  |  |  |  \-[IDENT] Node: 'uib'
+    |  |     |  |  |  |  |  |  |  |  \-[IDENT] Node: 'secom'
+    |  |     |  |  |  |  |  |  |  \-[IDENT] Node: 'crypto'
+    |  |     |  |  |  |  |  |  \-[IDENT] Node: 'afc'
+    |  |     |  |  |  |  |  \-[IDENT] Node: 'store'
+    |  |     |  |  |  |  \-[IDENT] Node: 'pojo'
+    |  |     |  |  |  \-[IDENT] Node: 'impl'
+    |  |     |  |  \-[IDENT] Node: 'user'
+    |  |     |  \-[IDENT] Node: 'UserAFCJourneyImpl'
+    |  |     \-[ALIAS] Node: 'ua'
+    |  \-[SELECT] Node: 'SELECT'
+    |     \-[IDENT] Node: 'ua'
+    \-[WHERE] Node: 'WHERE'
+       \-[EQ] Node: '='
+          +-[DOT] Node: '.'
+          |  +-[DOT] Node: '.'
+          |  |  +-[IDENT] Node: 'ticketINSigned'
+          |  |  \-[IDENT] Node: 'ticketIN'
+          |  \-[IDENT] Node: 'serialNumber'
+          \-[COLON] Node: ':'
+             \-[IDENT] Node: 'serialNumber'
+
+DEBUG main 2011-03-31 12:32:51,399 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-03-31 12:32:51,399 HqlSqlBaseWalker - select << begin [level=1, statement=select]
+DEBUG main 2011-03-31 12:32:51,400 FromElement - FromClause{level=1} :  cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl (ua) -> userafcjou0_
+DEBUG main 2011-03-31 12:32:51,400 FromReferenceNode - Resolved :  ua -> userafcjou0_.ID
+DEBUG main 2011-03-31 12:32:51,400 FromReferenceNode - Resolved :  {synthetic-alias} -> {synthetic-alias}
+DEBUG main 2011-03-31 12:32:51,400 DotNode - getDataType() : ticketINSigned -> org.hibernate.type.ComponentType@72392814
+DEBUG main 2011-03-31 12:32:51,401 DotNode - Unresolved property path is now 'ticketINSigned.ticketIN'
+DEBUG main 2011-03-31 12:32:51,401 FromReferenceNode - Resolved :  {synthetic-alias}.ticketINSigned -> (userafcjou0_.TIN_SERIAL_NUMBER, userafcjou0_.TIN_OMEGA_DELTAU, userafcjou0_.TIN_OMEGA_HK, userafcjou0_.TIN_OMEGA_S1, userafcjou0_.TIN_OMEGA_SIGN_C, userafcjou0_.TIN_OMEGA_SIGN_SALPHA, userafcjou0_.TIN_OMEGA_SIGN_SBETA, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1, userafcjou0_.TIN_OMEGA_SIGN_DELTA2, userafcjou0_.TIN_OMEGA_SIGN_SX, userafcjou0_.TIN_OMEGA_SIGN_T1, userafcjou0_.TIN_OMEGA_SIGN_T2, userafcjou0_.TIN_OMEGA_SIGN_T3, userafcjou0_.TIN_SOURCE_STATION, userafcjou0_.TIN_TAU_1, userafcjou0_.TIN_VALIDITY_TIME)
+DEBUG main 2011-03-31 12:32:51,401 DotNode - getDataType() : ticketINSigned.ticketIN -> org.hibernate.type.ComponentType@67673a2
+DEBUG main 2011-03-31 12:32:51,401 DotNode - Unresolved property path is now 'ticketINSigned.ticketIN.serialNumber'
+DEBUG main 2011-03-31 12:32:51,401 FromReferenceNode - Resolved :  {synthetic-alias}.ticketINSigned.ticketIN -> userafcjou0_.TIN_SERIAL_NUMBER
+DEBUG main 2011-03-31 12:32:51,402 DotNode - getDataType() : ticketINSigned.ticketIN.serialNumber -> org.hibernate.type.IntegerType@509ced8e
+DEBUG main 2011-03-31 12:32:51,402 FromReferenceNode - Resolved :  {synthetic-alias}.ticketINSigned.ticketIN.serialNumber -> userafcjou0_.TIN_SERIAL_NUMBER
+DEBUG main 2011-03-31 12:32:51,402 HqlSqlBaseWalker - select : finishing up [level=1, statement=select]
+DEBUG main 2011-03-31 12:32:51,402 HqlSqlWalker - processQuery() :  ( SELECT ( {select clause} userafcjou0_.ID ) ( FromClause{level=1} USER_AFC_JOURNEY userafcjou0_ ) ( WHERE ( = ( userafcjou0_.TIN_SERIAL_NUMBER ( userafcjou0_.TIN_SERIAL_NUMBER ( (userafcjou0_.TIN_SERIAL_NUMBER, userafcjou0_.TIN_OMEGA_DELTAU, userafcjou0_.TIN_OMEGA_HK, userafcjou0_.TIN_OMEGA_S1, userafcjou0_.TIN_OMEGA_SIGN_C, userafcjou0_.TIN_OMEGA_SIGN_SALPHA, userafcjou0_.TIN_OMEGA_SIGN_SBETA, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1, userafcjou0_.TIN_OMEGA_SIGN_DELTA2, userafcjou0_.TIN_OMEGA_SIGN_SX, userafcjou0_.TIN_OMEGA_SIGN_T1, userafcjou0_.TIN_OMEGA_SIGN_T2, userafcjou0_.TIN_OMEGA_SIGN_T3, userafcjou0_.TIN_SOURCE_STATION, userafcjou0_.TIN_TAU_1, userafcjou0_.TIN_VALIDITY_TIME) {synthetic-alias} ticketINSigned ) ticketIN ) serialNumber ) ? ) ) )
+DEBUG main 2011-03-31 12:32:51,402 JoinProcessor - Using FROM fragment [USER_AFC_JOURNEY userafcjou0_]
+DEBUG main 2011-03-31 12:32:51,403 HqlSqlBaseWalker - select >> end [level=1, statement=select]
+DEBUG main 2011-03-31 12:32:51,403 QueryTranslatorImpl - --- SQL AST ---
+ \-[SELECT] QueryNode: 'SELECT'  querySpaces (USER_AFC_JOURNEY)
+    +-[SELECT_CLAUSE] SelectClause: '{select clause}'
+    |  +-[ALIAS_REF] IdentNode: 'userafcjou0_.ID as ID17_' {alias=ua, className=cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl, tableAlias=userafcjou0_}
+    |  \-[SQL_TOKEN] SqlFragment: 'userafcjou0_.TIN_SECRET_K as TIN2_17_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_, userafcjou0_.TIN_SIGNATURE as TIN4_17_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_, userafcjou0_.TIN_TAU_1 as TIN19_17_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_, userafcjou0_.TOUT_FARE as TOUT23_17_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_, userafcjou0_.USER_YU as USER26_17_'
+    +-[FROM] FromClause: 'FROM' FromClause{level=1, fromElementCounter=1, fromElements=1, fromElementByClassAlias=[ua], fromElementByTableAlias=[userafcjou0_], fromElementsByPath=[], collectionJoinFromElementsByPath=[], impliedElements=[]}
+    |  \-[FROM_FRAGMENT] FromElement: 'USER_AFC_JOURNEY userafcjou0_' FromElement{explicit,not a collection join,not a fetch join,fetch non-lazy properties,classAlias=ua,role=null,tableName=USER_AFC_JOURNEY,tableAlias=userafcjou0_,origin=null,columns={,className=cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl}}
+    \-[WHERE] SqlNode: 'WHERE'
+       \-[EQ] BinaryLogicOperatorNode: '='
+          +-[DOT] DotNode: 'userafcjou0_.TIN_SERIAL_NUMBER' {propertyName=serialNumber,dereferenceType=ALL,propertyPath=ticketINSigned.ticketIN.serialNumber,path={synthetic-alias}.ticketINSigned.ticketIN.serialNumber,tableAlias=userafcjou0_,className=cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl,classAlias=ua}
+          |  +-[DOT] DotNode: 'userafcjou0_.TIN_SERIAL_NUMBER' {propertyName=serialNumber,dereferenceType=2,propertyPath=ticketINSigned.ticketIN.serialNumber,path={synthetic-alias}.ticketINSigned.ticketIN,tableAlias=userafcjou0_,className=cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl,classAlias=ua}
+          |  |  +-[DOT] DotNode: '(userafcjou0_.TIN_SERIAL_NUMBER, userafcjou0_.TIN_OMEGA_DELTAU, userafcjou0_.TIN_OMEGA_HK, userafcjou0_.TIN_OMEGA_S1, userafcjou0_.TIN_OMEGA_SIGN_C, userafcjou0_.TIN_OMEGA_SIGN_SALPHA, userafcjou0_.TIN_OMEGA_SIGN_SBETA, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1, userafcjou0_.TIN_OMEGA_SIGN_DELTA2, userafcjou0_.TIN_OMEGA_SIGN_SX, userafcjou0_.TIN_OMEGA_SIGN_T1, userafcjou0_.TIN_OMEGA_SIGN_T2, userafcjou0_.TIN_OMEGA_SIGN_T3, userafcjou0_.TIN_SOURCE_STATION, userafcjou0_.TIN_TAU_1, userafcjou0_.TIN_VALIDITY_TIME)' {propertyName=ticketIN,dereferenceType=2,propertyPath=ticketINSigned.ticketIN,path={synthetic-alias}.ticketINSigned,tableAlias=userafcjou0_,className=cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl,classAlias=ua}
+          |  |  |  +-[IDENT] IdentNode: '{synthetic-alias}' {originalText={synthetic-alias}}
+          |  |  |  \-[IDENT] IdentNode: 'ticketINSigned' {originalText=ticketINSigned}
+          |  |  \-[IDENT] IdentNode: 'ticketIN' {originalText=ticketIN}
+          |  \-[IDENT] IdentNode: 'serialNumber' {originalText=serialNumber}
+          \-[NAMED_PARAM] ParameterNode: '?' {name=serialNumber, expectedType=org.hibernate.type.IntegerType@509ced8e}
+
+DEBUG main 2011-03-31 12:32:51,403 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-03-31 12:32:51,404 QueryTranslatorImpl - HQL: SELECT ua FROM cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl ua WHERE ticketINSigned.ticketIN.serialNumber = :serialNumber
+DEBUG main 2011-03-31 12:32:51,404 QueryTranslatorImpl - SQL: select userafcjou0_.ID as ID17_, userafcjou0_.TIN_SECRET_K as TIN2_17_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_, userafcjou0_.TIN_SIGNATURE as TIN4_17_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_, userafcjou0_.TIN_TAU_1 as TIN19_17_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_, userafcjou0_.TOUT_FARE as TOUT23_17_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_, userafcjou0_.USER_YU as USER26_17_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.TIN_SERIAL_NUMBER=?
+DEBUG main 2011-03-31 12:32:51,404 ErrorCounter - throwQueryException() : no errors
+DEBUG main 2011-03-31 12:32:51,405 SessionFactoryImpl - Checking 0 named SQL queries
+DEBUG main 2011-03-31 12:32:51,408 SessionImpl - opened session at timestamp: 13015675714
+DEBUG main 2011-03-31 12:32:51,411 JDBCTransaction - begin
+DEBUG main 2011-03-31 12:32:51,412 ConnectionManager - opening JDBC connection
+DEBUG main 2011-03-31 12:32:51,412 JDBCTransaction - current autocommit status: true
+DEBUG main 2011-03-31 12:32:51,412 JDBCTransaction - disabling autocommit
+DEBUG main 2011-03-31 12:32:51,412 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-03-31 12:32:51,412 SQLStatementLogger - select userafcimp0_.ID as ID16_, userafcimp0_.USER_CERTIFICATE as USER2_16_, userafcimp0_.GROUP_PUBLIC_KEY_G1 as GROUP3_16_, userafcimp0_.GROUP_PUBLIC_KEY_G2 as GROUP4_16_, userafcimp0_.GROUP_PUBLIC_KEY_H as GROUP5_16_, userafcimp0_.GROUP_PUBLIC_KEY_OMEGA as GROUP6_16_, userafcimp0_.GROUP_PUBLIC_KEY_U as GROUP7_16_, userafcimp0_.GROUP_PUBLIC_KEY_V as GROUP8_16_, userafcimp0_.USER_REAL_IDENTITY as USER9_16_, userafcimp0_.USER_PK_A as USER10_16_, userafcimp0_.USER_PK_X as USER11_16_, userafcimp0_.USER_SECRET_XU as USER12_16_, userafcimp0_.USER_YU as USER13_16_ from USER_AFC userafcimp0_ where userafcimp0_.USER_REAL_IDENTITY=? limit ?
+DEBUG main 2011-03-31 12:32:51,414 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-03-31 12:32:51,414 Loader - result row: EntityKey[cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl#5]
+DEBUG main 2011-03-31 12:32:51,414 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-03-31 12:32:51,415 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-03-31 12:32:51,415 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl#5]
+DEBUG main 2011-03-31 12:32:51,415 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl#5]
+DEBUG main 2011-03-31 12:32:51,415 StatefulPersistenceContext - initializing non-lazy collections
+DEBUG main 2011-03-31 12:32:51,415 AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main 2011-03-31 12:32:51,416 AbstractFlushingEventListener - dirty checking collections
+DEBUG main 2011-03-31 12:32:51,416 AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+DEBUG main 2011-03-31 12:32:51,416 AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main 2011-03-31 12:32:51,416 Printer - listing entities:
+DEBUG main 2011-03-31 12:32:51,416 Printer - cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl{groupPublicKey=component[g1,g2,h,omega,u,v]{v=0e52bdc10023f4b37b5deb214993d57a7163836184504a8898c469cba986e1794d5cb3a5d27d4d332e53aeb4, u=0e52bdc10023f4b37b5deb214993d57a7163836184504a8898c469cba986e1794d5cb3a5d27d4d332e53aeb4, g2=3ada8ae31f589abeeafee19de80606f2cfb4d0fd78664436eb44696152533e7429550f9adc5339bb919f61d11716437cdfbd5edeacd8dfc4505d9fb2e526c196d123184e4de9efc7b12d83257df0969a981eb124a630305036b153d90abcbb1509423833836019190061e9d8f6483bbe75b7fa7df30891043e8b49802f8174789e150978, g1=1607b5f1057cebf1b29a99ed149a12338cfc8d8430670e08805945e688ad10cbe2c6893b89bc13dea49ca983, omega=032509d31186818eefca97483bb510a6186182ffa0e42f7e112e5853ffd8547ada872815052c7555a2b17c42394f0f609cc905718f0a0c5e9a4849510b2b70cdf02213f9e6268854c066caeab77399446126db42104679e741bc35430c7b58d7af71e7a72cb0a305eea11cea1a0e3f6ffcc0fca413dd20055185f71f6179c3a33c37d7ae, h=264bf9d4fcf3cf35242fc09e709665221ff2a0d172f0370ddfc296e0cc50eaae60027a32397c142a1368d3f6}, id=5, certificate=certificate_5, yu=2e0809b42e62d13135e80aba3ed446df57f3282dc9bc5513f6895c2db4095fb2f43c5bf93b98ed75f819df25, realIdentity=5, userPrivateKey=component[ai,xi]{ai=263b9b367ab81beed9834e8e1294bc2db1381fe02d723955efebc4f918a97ffd12a36d73014f3cf66cb27cd9, xi=01979677ba3ecce566b40b1ba139dc44a5f7f1dc97}, xu=01155c21364793425e882afe1eab081ba1035cc83a}
+DEBUG main 2011-03-31 12:32:51,416 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-03-31 12:32:51,417 SQLStatementLogger - select userafcjou0_.ID as ID17_, userafcjou0_.TIN_SECRET_K as TIN2_17_, userafcjou0_.TIN_SECRET_R1 as TIN3_17_, userafcjou0_.TIN_SIGNATURE as TIN4_17_, userafcjou0_.TIN_SERIAL_NUMBER as TIN5_17_, userafcjou0_.TIN_OMEGA_DELTAU as TIN6_17_, userafcjou0_.TIN_OMEGA_HK as TIN7_17_, userafcjou0_.TIN_OMEGA_S1 as TIN8_17_, userafcjou0_.TIN_OMEGA_SIGN_C as TIN9_17_, userafcjou0_.TIN_OMEGA_SIGN_SALPHA as TIN10_17_, userafcjou0_.TIN_OMEGA_SIGN_SBETA as TIN11_17_, userafcjou0_.TIN_OMEGA_SIGN_SDELTA1 as TIN12_17_, userafcjou0_.TIN_OMEGA_SIGN_DELTA2 as TIN13_17_, userafcjou0_.TIN_OMEGA_SIGN_SX as TIN14_17_, userafcjou0_.TIN_OMEGA_SIGN_T1 as TIN15_17_, userafcjou0_.TIN_OMEGA_SIGN_T2 as TIN16_17_, userafcjou0_.TIN_OMEGA_SIGN_T3 as TIN17_17_, userafcjou0_.TIN_SOURCE_STATION as TIN18_17_, userafcjou0_.TIN_TAU_1 as TIN19_17_, userafcjou0_.TIN_VALIDITY_TIME as TIN20_17_, userafcjou0_.TOUT_SIGNATURE as TOUT21_17_, userafcjou0_.TOUT_DESTINATION_STATION as TOUT22_17_, userafcjou0_.TOUT_FARE as TOUT23_17_, userafcjou0_.TOUT_SERIAL_NUMBER as TOUT24_17_, userafcjou0_.TOUT_MESSAGE as TOUT25_17_, userafcjou0_.USER_YU as USER26_17_ from USER_AFC_JOURNEY userafcjou0_ where userafcjou0_.TIN_SERIAL_NUMBER=? limit ?
+DEBUG main 2011-03-31 12:32:51,418 AbstractBatcher - about to open ResultSet (open ResultSets: 0, globally: 0)
+DEBUG main 2011-03-31 12:32:51,419 Loader - result row: EntityKey[cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl#12]
+DEBUG main 2011-03-31 12:32:51,419 AbstractBatcher - about to close ResultSet (open ResultSets: 1, globally: 1)
+DEBUG main 2011-03-31 12:32:51,420 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-03-31 12:32:51,420 TwoPhaseLoad - resolving associations for [cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl#12]
+DEBUG main 2011-03-31 12:32:51,420 TwoPhaseLoad - done materializing entity [cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl#12]
+DEBUG main 2011-03-31 12:32:51,420 StatefulPersistenceContext - initializing non-lazy collections
+DEBUG main 2011-03-31 12:33:07,963 JDBCTransaction - commit
+DEBUG main 2011-03-31 12:33:07,963 AbstractFlushingEventListener - processing flush-time cascades
+DEBUG main 2011-03-31 12:33:07,963 AbstractFlushingEventListener - dirty checking collections
+DEBUG main 2011-03-31 12:33:07,964 AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 2 objects
+DEBUG main 2011-03-31 12:33:07,964 AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+DEBUG main 2011-03-31 12:33:07,964 Printer - listing entities:
+DEBUG main 2011-03-31 12:33:07,964 Printer - cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl{groupPublicKey=component[g1,g2,h,omega,u,v]{v=0e52bdc10023f4b37b5deb214993d57a7163836184504a8898c469cba986e1794d5cb3a5d27d4d332e53aeb4, u=0e52bdc10023f4b37b5deb214993d57a7163836184504a8898c469cba986e1794d5cb3a5d27d4d332e53aeb4, g2=3ada8ae31f589abeeafee19de80606f2cfb4d0fd78664436eb44696152533e7429550f9adc5339bb919f61d11716437cdfbd5edeacd8dfc4505d9fb2e526c196d123184e4de9efc7b12d83257df0969a981eb124a630305036b153d90abcbb1509423833836019190061e9d8f6483bbe75b7fa7df30891043e8b49802f8174789e150978, g1=1607b5f1057cebf1b29a99ed149a12338cfc8d8430670e08805945e688ad10cbe2c6893b89bc13dea49ca983, omega=032509d31186818eefca97483bb510a6186182ffa0e42f7e112e5853ffd8547ada872815052c7555a2b17c42394f0f609cc905718f0a0c5e9a4849510b2b70cdf02213f9e6268854c066caeab77399446126db42104679e741bc35430c7b58d7af71e7a72cb0a305eea11cea1a0e3f6ffcc0fca413dd20055185f71f6179c3a33c37d7ae, h=264bf9d4fcf3cf35242fc09e709665221ff2a0d172f0370ddfc296e0cc50eaae60027a32397c142a1368d3f6}, id=5, certificate=certificate_5, yu=2e0809b42e62d13135e80aba3ed446df57f3282dc9bc5513f6895c2db4095fb2f43c5bf93b98ed75f819df25, realIdentity=5, userPrivateKey=component[ai,xi]{ai=263b9b367ab81beed9834e8e1294bc2db1381fe02d723955efebc4f918a97ffd12a36d73014f3cf66cb27cd9, xi=01979677ba3ecce566b40b1ba139dc44a5f7f1dc97}, xu=01155c21364793425e882afe1eab081ba1035cc83a}
+DEBUG main 2011-03-31 12:33:07,965 Printer - cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl{id=12, yu=2e0809b42e62d13135e80aba3ed446df57f3282dc9bc5513f6895c2db4095fb2f43c5bf93b98ed75f819df25, ticketINSigned=component[signature,ticketIN]{ticketIN=component[serialNumber,sigmaSigned,srcProvider,timestamp1,validityTime]{validityTime=2011-03-31 13:32:49.0, sigmaSigned=component[sigma,signature]{sigma=component[deltau,hk,s1]{deltau=34c76efe3960762e391a2d435cc2cff2fc49373b0d0456c87b1ba3bcb5b45b873ea37dd01ea0c4fe872b456052dbece8fe1fd3d7019da6c3c318a4399511e23c5e5865c445243261c3ae6e888fa590a0a5d507448f657130be4cfbdea1c9ca3db838200d1a970452996d16ec955dd549637de193319043463678858a51aee27d, s1=3003abfb566862733242179d2e5a09d69be0c25ddd0e3719b8615ebc7e0b83135bc31de025b6ba2a2dc1918a, hk=4c96e946ccf63f6603bd4c184b9066e7ccb8b372}, signature=component[c,salpha,sbeta,sdelta1,sdelta2,sx,t1,t2,t3]{t3=198173be97a40d8d88fb1cf75ebbe668466d6a487c861d1b991f7f1a396974e2c45c0ddef9cad325319ef42f, t2=3254978554873fa71f18f17597e6e0ef94f8c995d3e84472e8b09fa1cfe31152c9d0e8117b05432f669ad20c, t1=1898d7e78a8e7d631005e31b211076f1f6fd3914ffb0223a88bf1d24cb8a410cb28acde7677735f512f71ee4, sbeta=006441f66b49481b136c6d4ffb98646772340e9e43, salpha=01a2ab29091e2faa2a2bf190b4f3d0108b3da226a1, c=010a080d577fd22054256dc540b2cdc29e68760174, sdelta2=016face4bc4c2d96e1dff30696dc95775dc43d27a8, sdelta1=0099f20b6dc8a5f79d66366d6603c392ddbe397a6a, sx=01221bdc1d939b2cab8d97a0bd5fba1283ab5dfdaa}}, serialNumber=606, srcProvider=1111, timestamp1=2011-03-31 12:32:49.0}, signature=872cc82818c97cca548b276c16e09cf14ac255966b428d500cd3353f4bef359404bc8e97e74ba6823c128fa84bb542ca37df932c891a023a5be799ea7a06912d87d826cf117d142a56ea20f7ea0f97fc7d06af7cf1f242f1bf344d72489d843d08cc53419c2f46813d74844b5ac5e5a1d325a60bed2221803c0cf74bac35a9a0}, ticketOUTSigned=component[signatureOUT,ticketOUT]{ticketOUT=component[dstProvider,fare,serialNumber,str]{str=leave taking at Thu Mar 31 12:32:51 CEST 2011, dstProvider=2222, serialNumber=606, fare=10.3}, signatureOUT=664d6f676f456f393233743274744b5954456e3257534c6f68513253657671794534473230304a6d547659546e333457336744366b624237656c594a4242634c38676564636e67454242654268436470716e6f6339624832656f415935503074337732784751784f4e764876794977597938366335544a683064416765575353536a4d76363336576454534b4b364436724e5073544331614a74746b76375866784c5676464458786f41383d}, r1=00130b4714f886632dad1313a066dcd52890b09f78, k=0115de1eaa99ae2e20b8213af5a8b11e58d96fafe8}
+DEBUG main 2011-03-31 12:33:07,965 AbstractBatcher - about to open PreparedStatement (open PreparedStatements: 0, globally: 0)
+DEBUG main 2011-03-31 12:33:07,965 SQLStatementLogger - update USER_AFC_JOURNEY set TIN_SECRET_K=?, TIN_SECRET_R1=?, TIN_SIGNATURE=?, TIN_SERIAL_NUMBER=?, TIN_OMEGA_DELTAU=?, TIN_OMEGA_HK=?, TIN_OMEGA_S1=?, TIN_OMEGA_SIGN_C=?, TIN_OMEGA_SIGN_SALPHA=?, TIN_OMEGA_SIGN_SBETA=?, TIN_OMEGA_SIGN_SDELTA1=?, TIN_OMEGA_SIGN_DELTA2=?, TIN_OMEGA_SIGN_SX=?, TIN_OMEGA_SIGN_T1=?, TIN_OMEGA_SIGN_T2=?, TIN_OMEGA_SIGN_T3=?, TIN_SOURCE_STATION=?, TIN_TAU_1=?, TIN_VALIDITY_TIME=?, TOUT_SIGNATURE=?, TOUT_DESTINATION_STATION=?, TOUT_FARE=?, TOUT_SERIAL_NUMBER=?, TOUT_MESSAGE=?, USER_YU=? where ID=?
+DEBUG main 2011-03-31 12:33:07,969 BatchingBatcher - Executing batch size: 1
+DEBUG main 2011-03-31 12:33:07,970 AbstractBatcher - about to close PreparedStatement (open PreparedStatements: 1, globally: 1)
+DEBUG main 2011-03-31 12:33:07,970 JDBCTransaction - re-enabling autocommit
+DEBUG main 2011-03-31 12:33:07,970 JDBCTransaction - committed JDBC Connection
+DEBUG main 2011-03-31 12:33:07,970 ConnectionManager - aggressively releasing JDBC connection
+DEBUG main 2011-03-31 12:33:07,970 ConnectionManager - releasing JDBC connection [ (open PreparedStatements: 0, globally: 0) (open ResultSets: 0, globally: 0)]
+INFO main 2011-03-31 12:33:07,971 SessionFactoryImpl - closing
+INFO main 2011-03-31 12:33:07,971 DriverManagerConnectionProvider - cleaning up connection pool: jdbc:mysql://localhost/afc2_user
+DEBUG main 2011-03-31 12:33:07,972 BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4e99353f
+DEBUG main 2011-03-31 12:33:07,972 BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BooleanType@4e99353f
+DEBUG main 2011-03-31 12:33:07,972 BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@4e99353f
+DEBUG main 2011-03-31 12:33:07,972 BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@48f0c0d3
+DEBUG main 2011-03-31 12:33:07,972 BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.TrueFalseType@52cc95d
+DEBUG main 2011-03-31 12:33:07,972 BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.YesNoType@2934e4fb
+DEBUG main 2011-03-31 12:33:07,972 BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@13c695a6
+DEBUG main 2011-03-31 12:33:07,973 BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.ByteType@13c695a6
+DEBUG main 2011-03-31 12:33:07,973 BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@13c695a6
+DEBUG main 2011-03-31 12:33:07,973 BasicTypeRegistry - Adding type registration character -> org.hibernate.type.CharacterType@787bb290
+DEBUG main 2011-03-31 12:33:07,973 BasicTypeRegistry - Adding type registration char -> org.hibernate.type.CharacterType@787bb290
+DEBUG main 2011-03-31 12:33:07,973 BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@787bb290
+DEBUG main 2011-03-31 12:33:07,973 BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@49362012
+DEBUG main 2011-03-31 12:33:07,973 BasicTypeRegistry - Adding type registration short -> org.hibernate.type.ShortType@49362012
+DEBUG main 2011-03-31 12:33:07,973 BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@49362012
+DEBUG main 2011-03-31 12:33:07,974 BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.IntegerType@509ced8e
+DEBUG main 2011-03-31 12:33:07,974 BasicTypeRegistry - Adding type registration int -> org.hibernate.type.IntegerType@509ced8e
+DEBUG main 2011-03-31 12:33:07,974 BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@509ced8e
+DEBUG main 2011-03-31 12:33:07,974 BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7a187814
+DEBUG main 2011-03-31 12:33:07,974 BasicTypeRegistry - Adding type registration long -> org.hibernate.type.LongType@7a187814
+DEBUG main 2011-03-31 12:33:07,974 BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.LongType@7a187814
+DEBUG main 2011-03-31 12:33:07,974 BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@b23b25c
+DEBUG main 2011-03-31 12:33:07,974 BasicTypeRegistry - Adding type registration float -> org.hibernate.type.FloatType@b23b25c
+DEBUG main 2011-03-31 12:33:07,975 BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@b23b25c
+DEBUG main 2011-03-31 12:33:07,975 BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@785f8172
+DEBUG main 2011-03-31 12:33:07,975 BasicTypeRegistry - Adding type registration double -> org.hibernate.type.DoubleType@785f8172
+DEBUG main 2011-03-31 12:33:07,975 BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@785f8172
+DEBUG main 2011-03-31 12:33:07,975 BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@79df8b99
+DEBUG main 2011-03-31 12:33:07,975 BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@79df8b99
+DEBUG main 2011-03-31 12:33:07,975 BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@e4ac00c
+DEBUG main 2011-03-31 12:33:07,976 BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@e4ac00c
+DEBUG main 2011-03-31 12:33:07,976 BasicTypeRegistry - Adding type registration string -> org.hibernate.type.StringType@29c56c60
+DEBUG main 2011-03-31 12:33:07,976 BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.StringType@29c56c60
+DEBUG main 2011-03-31 12:33:07,976 BasicTypeRegistry - Adding type registration url -> org.hibernate.type.UrlType@25595f51
+DEBUG main 2011-03-31 12:33:07,976 BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.UrlType@25595f51
+DEBUG main 2011-03-31 12:33:07,976 BasicTypeRegistry - Adding type registration date -> org.hibernate.type.DateType@5a9e29fb
+DEBUG main 2011-03-31 12:33:07,976 BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.DateType@5a9e29fb
+DEBUG main 2011-03-31 12:33:07,976 BasicTypeRegistry - Adding type registration time -> org.hibernate.type.TimeType@79a5f739
+DEBUG main 2011-03-31 12:33:07,977 BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@79a5f739
+DEBUG main 2011-03-31 12:33:07,977 BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.TimestampType@20b9b538
+DEBUG main 2011-03-31 12:33:07,977 BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@20b9b538
+DEBUG main 2011-03-31 12:33:07,977 BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@20b9b538
+DEBUG main 2011-03-31 12:33:07,977 BasicTypeRegistry - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@7290cb03
+DEBUG main 2011-03-31 12:33:07,977 BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.CalendarType@7ad81784
+DEBUG main 2011-03-31 12:33:07,978 BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@7ad81784
+DEBUG main 2011-03-31 12:33:07,978 BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@7ad81784
+DEBUG main 2011-03-31 12:33:07,978 BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@1342a80d
+DEBUG main 2011-03-31 12:33:07,978 BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.LocaleType@2c41d05d
+DEBUG main 2011-03-31 12:33:07,978 BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@2c41d05d
+DEBUG main 2011-03-31 12:33:07,978 BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.CurrencyType@2fb3f8f6
+DEBUG main 2011-03-31 12:33:07,978 BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@2fb3f8f6
+DEBUG main 2011-03-31 12:33:07,979 BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.TimeZoneType@36b8bef7
+DEBUG main 2011-03-31 12:33:07,979 BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@36b8bef7
+DEBUG main 2011-03-31 12:33:07,979 BasicTypeRegistry - Adding type registration class -> org.hibernate.type.ClassType@4ed1e89e
+DEBUG main 2011-03-31 12:33:07,979 BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@4ed1e89e
+DEBUG main 2011-03-31 12:33:07,979 BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@210a6ae2
+DEBUG main 2011-03-31 12:33:07,979 BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@210a6ae2
+DEBUG main 2011-03-31 12:33:07,979 BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@744a6cbf
+DEBUG main 2011-03-31 12:33:07,979 BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@44b01d43
+DEBUG main 2011-03-31 12:33:07,980 BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BinaryType@4bbd7848
+DEBUG main 2011-03-31 12:33:07,980 BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BinaryType@4bbd7848
+DEBUG main 2011-03-31 12:33:07,980 BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BinaryType@4bbd7848
+DEBUG main 2011-03-31 12:33:07,980 BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@351e1e67
+DEBUG main 2011-03-31 12:33:07,980 BasicTypeRegistry - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@351e1e67
+DEBUG main 2011-03-31 12:33:07,980 BasicTypeRegistry - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@351e1e67
+DEBUG main 2011-03-31 12:33:07,980 BasicTypeRegistry - Adding type registration image -> org.hibernate.type.ImageType@46b8c8e6
+DEBUG main 2011-03-31 12:33:07,980 BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.CharArrayType@2b76e552
+DEBUG main 2011-03-31 12:33:07,981 BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.CharArrayType@2b76e552
+DEBUG main 2011-03-31 12:33:07,981 BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.CharArrayType@2b76e552
+DEBUG main 2011-03-31 12:33:07,981 BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@851052d
+DEBUG main 2011-03-31 12:33:07,981 BasicTypeRegistry - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@851052d
+DEBUG main 2011-03-31 12:33:07,981 BasicTypeRegistry - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@851052d
+DEBUG main 2011-03-31 12:33:07,981 BasicTypeRegistry - Adding type registration text -> org.hibernate.type.TextType@159b5217
+DEBUG main 2011-03-31 12:33:07,981 BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BlobType@1a84da23
+DEBUG main 2011-03-31 12:33:07,982 BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@1a84da23
+DEBUG main 2011-03-31 12:33:07,982 BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@1d3c468a
+DEBUG main 2011-03-31 12:33:07,982 BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.ClobType@38dda25b
+DEBUG main 2011-03-31 12:33:07,982 BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@38dda25b
+DEBUG main 2011-03-31 12:33:07,982 BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@76f8968f
+DEBUG main 2011-03-31 12:33:07,982 BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.SerializableType@2a9df354
+DEBUG main 2011-03-31 12:33:07,982 BasicTypeRegistry - Adding type registration object -> org.hibernate.type.ObjectType@4ce32802
+DEBUG main 2011-03-31 12:33:07,982 BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@4ce32802
+DEBUG main 2011-03-31 12:33:07,983 BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@2755d4be
+DEBUG main 2011-03-31 12:33:07,983 BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@74021a1e
+DEBUG main 2011-03-31 12:33:07,983 BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@3600e312
+DEBUG main 2011-03-31 12:33:07,983 BasicTypeRegistry - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@743bce70
+DEBUG main 2011-03-31 12:33:07,983 BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@26e56ae
+DEBUG main 2011-03-31 12:33:07,983 BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@19fcbac1
+DEBUG main 2011-03-31 12:33:07,983 BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1f48e23b
+DEBUG main 2011-03-31 12:33:07,984 BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@69fc9f88
+DEBUG main 2011-03-31 12:33:07,984 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid2] -> [class org.hibernate.id.UUIDGenerator]
+DEBUG main 2011-03-31 12:33:07,984 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [guid] -> [class org.hibernate.id.GUIDGenerator]
+DEBUG main 2011-03-31 12:33:07,984 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid] -> [class org.hibernate.id.UUIDHexGenerator]
+DEBUG main 2011-03-31 12:33:07,984 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [uuid.hex] -> [class org.hibernate.id.UUIDHexGenerator]
+DEBUG main 2011-03-31 12:33:07,984 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [hilo] -> [class org.hibernate.id.TableHiLoGenerator]
+DEBUG main 2011-03-31 12:33:07,984 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [assigned] -> [class org.hibernate.id.Assigned]
+DEBUG main 2011-03-31 12:33:07,985 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [identity] -> [class org.hibernate.id.IdentityGenerator]
+DEBUG main 2011-03-31 12:33:07,985 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [select] -> [class org.hibernate.id.SelectGenerator]
+DEBUG main 2011-03-31 12:33:07,985 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence] -> [class org.hibernate.id.SequenceGenerator]
+DEBUG main 2011-03-31 12:33:07,985 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [seqhilo] -> [class org.hibernate.id.SequenceHiLoGenerator]
+DEBUG main 2011-03-31 12:33:07,985 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [increment] -> [class org.hibernate.id.IncrementGenerator]
+DEBUG main 2011-03-31 12:33:07,985 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [foreign] -> [class org.hibernate.id.ForeignGenerator]
+DEBUG main 2011-03-31 12:33:07,985 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [sequence-identity] -> [class org.hibernate.id.SequenceIdentityGenerator]
+DEBUG main 2011-03-31 12:33:07,985 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [class org.hibernate.id.enhanced.SequenceStyleGenerator]
+DEBUG main 2011-03-31 12:33:07,986 DefaultIdentifierGeneratorFactory - Registering IdentifierGenerator strategy [enhanced-table] -> [class org.hibernate.id.enhanced.TableGenerator]
+DEBUG main 2011-03-31 12:33:07,986 Ejb3Configuration - Look up for persistence unit: userAFC-PU
+DEBUG main 2011-03-31 12:33:08,006 AbstractJarVisitor - Searching mapped entities in jar/par: file:/home/apaspai/developing/java/afc/afc-server-side-impl/target/classes/
+DEBUG main 2011-03-31 12:33:08,007 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.provider.DestinationProviderServerThread
+DEBUG main 2011-03-31 12:33:08,007 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.provider.distancebased.DestinationProviderServerThread
+DEBUG main 2011-03-31 12:33:08,008 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.provider.distancebased.DestinationProviderServer
+DEBUG main 2011-03-31 12:33:08,008 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.provider.SourceProviderServer
+DEBUG main 2011-03-31 12:33:08,009 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.provider.SourceProviderServerThread
+DEBUG main 2011-03-31 12:33:08,009 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.provider.DestinationProviderServer
+DEBUG main 2011-03-31 12:33:08,009 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.groupttp.GroupTTPServer
+DEBUG main 2011-03-31 12:33:08,010 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.groupttp.GroupTTPServerThread
+DEBUG main 2011-03-31 12:33:08,010 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.payttp.PaymentTTPServer
+DEBUG main 2011-03-31 12:33:08,010 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.server.payttp.PaymentTTPServerThread
+DEBUG main 2011-03-31 12:33:08,011 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.model.router.AFCRouter
+DEBUG main 2011-03-31 12:33:08,011 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.model.router.RouterHelper
+DEBUG main 2011-03-31 12:33:08,011 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.user.standalone.UserAFCClientStandalone
+DEBUG main 2011-03-31 12:33:08,012 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.provider.StationTransactionImpl
+DEBUG main 2011-03-31 12:33:08,013 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.provider.StationTransactionImpl
+DEBUG main 2011-03-31 12:33:08,013 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.provider.StationImpl
+DEBUG main 2011-03-31 12:33:08,013 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.provider.StationImpl
+DEBUG main 2011-03-31 12:33:08,014 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.proofs.GammaUserImpl
+DEBUG main 2011-03-31 12:33:08,014 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.proofs.GammaUserImpl
+DEBUG main 2011-03-31 12:33:08,014 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.proofs.GammaDestProviderImpl
+DEBUG main 2011-03-31 12:33:08,014 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.proofs.GammaDestProviderImpl
+DEBUG main 2011-03-31 12:33:08,015 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.UserPrivateKey
+DEBUG main 2011-03-31 12:33:08,015 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.UserPrivateKey
+DEBUG main 2011-03-31 12:33:08,015 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.KeyPair
+DEBUG main 2011-03-31 12:33:08,015 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.GroupManagerPrivateKey
+DEBUG main 2011-03-31 12:33:08,015 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.GroupManagerPrivateKey
+DEBUG main 2011-03-31 12:33:08,016 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.GroupManagerConfigImpl
+DEBUG main 2011-03-31 12:33:08,016 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.GroupManagerConfigImpl
+DEBUG main 2011-03-31 12:33:08,016 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.GroupPublicKey
+DEBUG main 2011-03-31 12:33:08,016 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.groupttp.GroupPublicKey
+DEBUG main 2011-03-31 12:33:08,017 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl
+DEBUG main 2011-03-31 12:33:08,017 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl
+DEBUG main 2011-03-31 12:33:08,017 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl
+DEBUG main 2011-03-31 12:33:08,017 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl
+DEBUG main 2011-03-31 12:33:08,018 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.ticket.TicketOUTSignedImpl
+DEBUG main 2011-03-31 12:33:08,018 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.ticket.TicketOUTSignedImpl
+DEBUG main 2011-03-31 12:33:08,018 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.ticket.BetaImpl
+DEBUG main 2011-03-31 12:33:08,018 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.ticket.BetaImpl
+DEBUG main 2011-03-31 12:33:08,019 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.ticket.SigmaImpl
+DEBUG main 2011-03-31 12:33:08,019 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.ticket.SigmaImpl
+DEBUG main 2011-03-31 12:33:08,019 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.ticket.TicketINImpl
+DEBUG main 2011-03-31 12:33:08,019 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.ticket.TicketINImpl
+DEBUG main 2011-03-31 12:33:08,020 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.ticket.SigmaSignedImpl
+DEBUG main 2011-03-31 12:33:08,020 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.ticket.SigmaSignedImpl
+DEBUG main 2011-03-31 12:33:08,020 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.ticket.TicketINSignedImpl
+DEBUG main 2011-03-31 12:33:08,020 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.ticket.TicketINSignedImpl
+DEBUG main 2011-03-31 12:33:08,021 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.ticket.BetaSignedImpl
+DEBUG main 2011-03-31 12:33:08,021 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.ticket.BetaSignedImpl
+DEBUG main 2011-03-31 12:33:08,021 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.ticket.TicketOUTImpl
+DEBUG main 2011-03-31 12:33:08,021 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.ticket.TicketOUTImpl
+DEBUG main 2011-03-31 12:33:08,022 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.payttp.PaymentTTPAccountImpl
+DEBUG main 2011-03-31 12:33:08,022 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.payttp.PaymentTTPAccountImpl
+DEBUG main 2011-03-31 12:33:08,022 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.pojo.impl.payttp.PaymentTTPTransactionImpl
+DEBUG main 2011-03-31 12:33:08,023 AbstractJarVisitor - Java element filter matched for cat.uib.secom.crypto.afc.store.pojo.impl.payttp.PaymentTTPTransactionImpl
+DEBUG main 2011-03-31 12:33:08,023 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.jpa.business.provider.SourceProviderEntityManagerBean
+DEBUG main 2011-03-31 12:33:08,023 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.jpa.business.provider.DestinationProviderEntityManagerBean
+DEBUG main 2011-03-31 12:33:08,024 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.jpa.business.groupttp.GroupTTPEntityManagerBean
+DEBUG main 2011-03-31 12:33:08,024 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.jpa.business.user.UserAFCEntityManagerBean
+DEBUG main 2011-03-31 12:33:08,024 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.jpa.business.payttp.UserNotRegisteredException
+DEBUG main 2011-03-31 12:33:08,025 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.jpa.business.payttp.NotEnoughBalanceException
+DEBUG main 2011-03-31 12:33:08,025 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.jpa.business.payttp.MultipleEqualPseudonymsException
+DEBUG main 2011-03-31 12:33:08,025 AbstractJarVisitor - Filtering: cat.uib.secom.crypto.afc.store.jpa.business.payttp.PaymentTTPEntityManagerBean
+DEBUG main 2011-03-31 12:33:08,026 Ejb3Configuration - Detect class: true; detect hbm: true
+DEBUG main 2011-03-31 12:33:08,026 Ejb3Configuration - Creating Factory: userAFC-PU
+DEBUG main 2011-03-31 12:33:08,026 Configuration$MetadataSourceQueue - Processing hbm.xml files
+DEBUG main 2011-03-31 12:33:08,026 Configuration$MetadataSourceQueue - Process annotated classes
+INFO main 2011-03-31 12:33:08,027 AnnotationBinder - Binding entity from annotated class: cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl
+INFO main 2011-03-31 12:33:08,027 QueryBinder - Binding Named query: searchIdRobot => SELECT u FROM UserAFCImpl u WHERE u.realIdentity = :idRobot
+DEBUG main 2011-03-31 12:33:08,027 Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+DEBUG main 2011-03-31 12:33:08,027 AnnotationBinder - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+DEBUG main 2011-03-31 12:33:08,027 EntityBinder - Import with entity name UserAFCImpl
+INFO main 2011-03-31 12:33:08,027 EntityBinder - Bind entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCImpl on table USER_AFC
+DEBUG main 2011-03-31 12:33:08,029 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,029 PropertyBinder - binding property id with lazy=false
+DEBUG main 2011-03-31 12:33:08,029 SimpleValueBinder - building SimpleValue for id
+DEBUG main 2011-03-31 12:33:08,029 PropertyBinder - Building property id
+DEBUG main 2011-03-31 12:33:08,029 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=USER_CERTIFICATE, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,030 PropertyBinder - binding property certificate with lazy=false
+DEBUG main 2011-03-31 12:33:08,030 SimpleValueBinder - building SimpleValue for certificate
+DEBUG main 2011-03-31 12:33:08,030 PropertyBinder - Building property certificate
+DEBUG main 2011-03-31 12:33:08,030 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=groupPublicKey, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,031 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=GROUP_PUBLIC_KEY_G1, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,031 PropertyBinder - binding property g1 with lazy=false
+DEBUG main 2011-03-31 12:33:08,031 SimpleValueBinder - building SimpleValue for g1
+DEBUG main 2011-03-31 12:33:08,032 PropertyBinder - Building property g1
+DEBUG main 2011-03-31 12:33:08,032 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=GROUP_PUBLIC_KEY_G2, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,032 PropertyBinder - binding property g2 with lazy=false
+DEBUG main 2011-03-31 12:33:08,032 SimpleValueBinder - building SimpleValue for g2
+DEBUG main 2011-03-31 12:33:08,032 PropertyBinder - Building property g2
+DEBUG main 2011-03-31 12:33:08,032 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=GROUP_PUBLIC_KEY_H, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,033 PropertyBinder - binding property h with lazy=false
+DEBUG main 2011-03-31 12:33:08,033 SimpleValueBinder - building SimpleValue for h
+DEBUG main 2011-03-31 12:33:08,033 PropertyBinder - Building property h
+DEBUG main 2011-03-31 12:33:08,033 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=GROUP_PUBLIC_KEY_OMEGA, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,033 PropertyBinder - binding property omega with lazy=false
+DEBUG main 2011-03-31 12:33:08,034 SimpleValueBinder - building SimpleValue for omega
+DEBUG main 2011-03-31 12:33:08,034 PropertyBinder - Building property omega
+DEBUG main 2011-03-31 12:33:08,034 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=GROUP_PUBLIC_KEY_U, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,034 PropertyBinder - binding property u with lazy=false
+DEBUG main 2011-03-31 12:33:08,035 SimpleValueBinder - building SimpleValue for u
+DEBUG main 2011-03-31 12:33:08,035 PropertyBinder - Building property u
+DEBUG main 2011-03-31 12:33:08,035 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=GROUP_PUBLIC_KEY_V, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,035 PropertyBinder - binding property v with lazy=false
+DEBUG main 2011-03-31 12:33:08,035 SimpleValueBinder - building SimpleValue for v
+DEBUG main 2011-03-31 12:33:08,035 PropertyBinder - Building property v
+DEBUG main 2011-03-31 12:33:08,036 PropertyBinder - Building property groupPublicKey
+DEBUG main 2011-03-31 12:33:08,036 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=USER_REAL_IDENTITY, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,036 PropertyBinder - binding property realIdentity with lazy=false
+DEBUG main 2011-03-31 12:33:08,036 SimpleValueBinder - building SimpleValue for realIdentity
+DEBUG main 2011-03-31 12:33:08,036 PropertyBinder - Building property realIdentity
+DEBUG main 2011-03-31 12:33:08,036 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=userPrivateKey, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,037 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=USER_PK_A, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,037 PropertyBinder - binding property ai with lazy=false
+DEBUG main 2011-03-31 12:33:08,037 SimpleValueBinder - building SimpleValue for ai
+DEBUG main 2011-03-31 12:33:08,038 PropertyBinder - Building property ai
+DEBUG main 2011-03-31 12:33:08,038 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=USER_PK_X, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,038 PropertyBinder - binding property xi with lazy=false
+DEBUG main 2011-03-31 12:33:08,038 SimpleValueBinder - building SimpleValue for xi
+DEBUG main 2011-03-31 12:33:08,038 PropertyBinder - Building property xi
+DEBUG main 2011-03-31 12:33:08,038 PropertyBinder - Building property userPrivateKey
+DEBUG main 2011-03-31 12:33:08,039 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=USER_SECRET_XU, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,039 PropertyBinder - binding property xu with lazy=false
+DEBUG main 2011-03-31 12:33:08,039 SimpleValueBinder - building SimpleValue for xu
+DEBUG main 2011-03-31 12:33:08,039 PropertyBinder - Building property xu
+DEBUG main 2011-03-31 12:33:08,039 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC), mappingColumn=USER_YU, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,040 PropertyBinder - binding property yu with lazy=false
+DEBUG main 2011-03-31 12:33:08,040 SimpleValueBinder - building SimpleValue for yu
+DEBUG main 2011-03-31 12:33:08,040 PropertyBinder - Building property yu
+INFO main 2011-03-31 12:33:08,040 AnnotationBinder - Binding entity from annotated class: cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl
+INFO main 2011-03-31 12:33:08,040 QueryBinder - Binding Named query: searchTicketSerialNumber => SELECT ua FROM UserAFCJourneyImpl ua WHERE ticketINSigned.ticketIN.serialNumber = :serialNumber
+DEBUG main 2011-03-31 12:33:08,040 Ejb3Column - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+DEBUG main 2011-03-31 12:33:08,041 AnnotationBinder - no value specified for 'javax.persistence.sharedCache.mode'; using UNSPECIFIED
+DEBUG main 2011-03-31 12:33:08,041 EntityBinder - Import with entity name UserAFCJourneyImpl
+INFO main 2011-03-31 12:33:08,041 EntityBinder - Bind entity cat.uib.secom.crypto.afc.store.pojo.impl.user.UserAFCJourneyImpl on table USER_AFC_JOURNEY
+DEBUG main 2011-03-31 12:33:08,042 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=ID, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,042 PropertyBinder - binding property id with lazy=false
+DEBUG main 2011-03-31 12:33:08,042 SimpleValueBinder - building SimpleValue for id
+DEBUG main 2011-03-31 12:33:08,042 PropertyBinder - Building property id
+DEBUG main 2011-03-31 12:33:08,043 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_SECRET_K, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,043 PropertyBinder - binding property k with lazy=false
+DEBUG main 2011-03-31 12:33:08,043 SimpleValueBinder - building SimpleValue for k
+DEBUG main 2011-03-31 12:33:08,043 PropertyBinder - Building property k
+DEBUG main 2011-03-31 12:33:08,043 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_SECRET_R1, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,044 PropertyBinder - binding property r1 with lazy=false
+DEBUG main 2011-03-31 12:33:08,044 SimpleValueBinder - building SimpleValue for r1
+DEBUG main 2011-03-31 12:33:08,044 PropertyBinder - Building property r1
+DEBUG main 2011-03-31 12:33:08,044 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=ticketINSigned, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,044 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_SIGNATURE, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,045 PropertyBinder - binding property signature with lazy=false
+DEBUG main 2011-03-31 12:33:08,045 SimpleValueBinder - building SimpleValue for signature
+DEBUG main 2011-03-31 12:33:08,045 PropertyBinder - Building property signature
+DEBUG main 2011-03-31 12:33:08,045 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=ticketIN, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,046 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_SERIAL_NUMBER, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,046 PropertyBinder - binding property serialNumber with lazy=false
+DEBUG main 2011-03-31 12:33:08,046 SimpleValueBinder - building SimpleValue for serialNumber
+DEBUG main 2011-03-31 12:33:08,047 PropertyBinder - Building property serialNumber
+DEBUG main 2011-03-31 12:33:08,047 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=sigmaSigned, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,047 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=sigma, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,048 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_DELTAU, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,048 PropertyBinder - binding property deltau with lazy=false
+DEBUG main 2011-03-31 12:33:08,048 SimpleValueBinder - building SimpleValue for deltau
+DEBUG main 2011-03-31 12:33:08,049 PropertyBinder - Building property deltau
+DEBUG main 2011-03-31 12:33:08,049 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_HK, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,049 PropertyBinder - binding property hk with lazy=false
+DEBUG main 2011-03-31 12:33:08,049 SimpleValueBinder - building SimpleValue for hk
+DEBUG main 2011-03-31 12:33:08,049 PropertyBinder - Building property hk
+DEBUG main 2011-03-31 12:33:08,050 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_S1, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,050 PropertyBinder - binding property s1 with lazy=false
+DEBUG main 2011-03-31 12:33:08,050 SimpleValueBinder - building SimpleValue for s1
+DEBUG main 2011-03-31 12:33:08,050 PropertyBinder - Building property s1
+DEBUG main 2011-03-31 12:33:08,050 PropertyBinder - Building property sigma
+DEBUG main 2011-03-31 12:33:08,051 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=signature, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,052 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_SIGN_C, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,052 PropertyBinder - binding property c with lazy=false
+DEBUG main 2011-03-31 12:33:08,052 SimpleValueBinder - building SimpleValue for c
+DEBUG main 2011-03-31 12:33:08,052 PropertyBinder - Building property c
+DEBUG main 2011-03-31 12:33:08,052 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_SIGN_SALPHA, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,053 PropertyBinder - binding property salpha with lazy=false
+DEBUG main 2011-03-31 12:33:08,053 SimpleValueBinder - building SimpleValue for salpha
+DEBUG main 2011-03-31 12:33:08,053 PropertyBinder - Building property salpha
+DEBUG main 2011-03-31 12:33:08,053 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_SIGN_SBETA, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,053 PropertyBinder - binding property sbeta with lazy=false
+DEBUG main 2011-03-31 12:33:08,054 SimpleValueBinder - building SimpleValue for sbeta
+DEBUG main 2011-03-31 12:33:08,054 PropertyBinder - Building property sbeta
+DEBUG main 2011-03-31 12:33:08,054 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_SIGN_SDELTA1, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,054 PropertyBinder - binding property sdelta1 with lazy=false
+DEBUG main 2011-03-31 12:33:08,054 SimpleValueBinder - building SimpleValue for sdelta1
+DEBUG main 2011-03-31 12:33:08,055 PropertyBinder - Building property sdelta1
+DEBUG main 2011-03-31 12:33:08,055 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_SIGN_DELTA2, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,055 PropertyBinder - binding property sdelta2 with lazy=false
+DEBUG main 2011-03-31 12:33:08,055 SimpleValueBinder - building SimpleValue for sdelta2
+DEBUG main 2011-03-31 12:33:08,055 PropertyBinder - Building property sdelta2
+DEBUG main 2011-03-31 12:33:08,056 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_SIGN_SX, insertable=true, updatable=true, unique=false}
+DEBUG main 2011-03-31 12:33:08,056 PropertyBinder - binding property sx with lazy=false
+DEBUG main 2011-03-31 12:33:08,056 SimpleValueBinder - building SimpleValue for sx
+DEBUG main 2011-03-31 12:33:08,056 PropertyBinder - Building property sx
+DEBUG main 2011-03-31 12:33:08,056 Ejb3Column - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(USER_AFC_JOURNEY), mappingColumn=TIN_OMEGA_SIGN_T1, insertable=true, updatable=true, unique=false}
